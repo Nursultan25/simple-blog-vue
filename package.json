@@ -1,7 +1,10 @@
 {
   "name": "muso-blog",
+  "description": "a really cool app",
   "version": "1.0.0",
-  "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "postinstall": "npm run build",
     "start": "node server.js",
