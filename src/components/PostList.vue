@@ -19,5 +19,10 @@ export default {
 </script>
 
 <style scoped>
-
+  @media screen and (max-width: 400px){
+    .post {
+      margin: 0 auto;
+      width: 60%;
+    }
+  }
 </style>

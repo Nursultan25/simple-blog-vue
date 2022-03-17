@@ -30,15 +30,23 @@ export default {
 
 <style scoped>
   .post {
+    display: block;
+    position: relative;
     text-decoration: none;
-    margin: 40px 460px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
     padding: 10px 30px;
     padding-bottom: 30px;
     border-bottom: 2px solid lightgrey;
     background-color: #f4f4f4;
     border-radius: 10px;
-    max-width: 1000px;
-    min-width: 500px;
+    max-width: 50%;
+  }
+  @media screen and (max-width: 400px){
+    .post {
+      max-width: 90%;
+    }
   }
   .post h2 {
     display: inline-block;
@@ -51,6 +59,8 @@ export default {
     max-width: 400px;
   }
   .tag {
+    display: inline-flex;
+    margin-bottom: 5px;
     background-color: lightgrey;
     padding: 3px 8px;
     border-radius: 100px;

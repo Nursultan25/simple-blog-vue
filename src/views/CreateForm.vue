@@ -8,7 +8,9 @@
           <textarea v-model="body" id="content" required></textarea>
 
           <label for="tag">Tags (hit enter to add a tag)</label>
-          <input v-model="tag" type="text" id="tag" @keydown.enter.prevent="handleEnter">
+          <input v-model="tag" type="text" id="tag"
+                 @keydown.space.prevent="handleEnter"
+                 @keydown.enter.prevent="handleEnter">
           <div v-for="tag in tags" :key="tag" class="tags">
             #{{tag}}
           </div>

@@ -60,6 +60,13 @@ export default {
     margin-left: 10px;
     cursor: pointer;
   }
+  @media screen and (max-width: 400px){
+    .navrow {
+      width: 160px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+  }
   .navrow:hover {
     font-size: 22px;
   }

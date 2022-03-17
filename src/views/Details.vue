@@ -36,15 +36,21 @@ export default {
 
 <style scoped>
 .details {
+  display: block;
   text-decoration: none;
   position: relative;
-  margin-left: 15%;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
   padding: 20px 30px ;
   border-bottom: 2px solid lightgrey;
   border-radius: 10px;
-  max-width: 1000px;
-  min-width: 500px;
+  max-width: 60%;
+}
+@media screen and (max-width: 400px){
+  .details {
+    max-width: 90%;
+  }
 }
 .details h2 {
   display: inline-block;
@@ -58,6 +64,8 @@ export default {
 }
 
 .tag {
+  display: inline-flex;
+  margin-bottom: 5px;
   background-color: lightgrey;
   padding: 3px 8px;
   border-radius: 100px;
